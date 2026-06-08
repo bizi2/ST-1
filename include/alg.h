@@ -1,8 +1,8 @@
 // Copyright 2025 UNN-CS
 // Nazyrov A.A.
 
-#ifndef ALG_HEADER_H
-#define ALG_HEADER_H
+#ifndef INCLUDE_ALG_H_
+#define INCLUDE_ALG_H_
 
 #include <cstdint>
 
@@ -11,5 +11,4 @@ uint64_t findNthPrime(uint64_t n);
 uint64_t getNextPrime(uint64_t val);
 uint64_t calcSumPrimes(uint64_t bound);
 
-#endif
-
+#endif  // INCLUDE_ALG_H_

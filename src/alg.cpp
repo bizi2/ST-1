@@ -8,7 +8,7 @@ bool isPrimeNum(uint64_t val) {
     if (val < 2) return false;
     if (val == 2) return true;
     if (val % 2 == 0) return false;
-    
+
     uint64_t limit = static_cast<uint64_t>(std::sqrt(val));
     for (uint64_t d = 3; d <= limit; d += 2) {
         if (val % d == 0) return false;
@@ -18,10 +18,10 @@ bool isPrimeNum(uint64_t val) {
 
 uint64_t findNthPrime(uint64_t n) {
     if (n == 0) return 0;
-    
+
     uint64_t cnt = 0;
     uint64_t num = 1;
-    
+
     while (cnt < n) {
         num++;
         if (isPrimeNum(num)) cnt++;
@@ -42,4 +42,5 @@ uint64_t calcSumPrimes(uint64_t bound) {
     }
     return total;
 }
+
 
